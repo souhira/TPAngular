@@ -18,9 +18,10 @@
       <input type="submit" class="btn" [value]="btnText" (click)="ajoutItem()" >
       </form>
   </div>
+
   <div class="col">
-    <p class="life-container">
-      Je suis en cours d'Angular
+    <p class="life-container" *ngFor="let o of objectifs ">
+      {{o}}
     </p>
   </div>
 </div>
