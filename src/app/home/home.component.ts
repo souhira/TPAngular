@@ -7,12 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  nbItems: number = 4;
+  nbItems: number;
   btnText: string  = "Ajouter un item";
-  objectifText : string = "mon premier objectif";
-  
+  objectifText : string = "Mon nouvel objectif";
+  objectifs = [];
+
   constructor() { }
   ngOnInit() {
+    this.nbItems = this.objectifs.length;
   }
-
+  
+  ajoutItem()
+  {
+    this.objectifs.push(this.objectifText);
+    this.nbItems = this.objectifs.length;
+    this.objectifText = '';
+  }
 }
