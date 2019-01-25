@@ -3,7 +3,7 @@
     <p> Un element de liste </p>
   </div>
   <div class="col">
-      <p> Ma  liste d'élements</p>
+      <p> Ma  liste d'éléments ({{ nbItems }})</p>
   </div>
 </div>
 
@@ -13,7 +13,7 @@
       <p class="sm"> Un nouvel élément de liste </p>
       <form>
       <input type="text" class="txt" name="item" placeholder="...">
-      <input type="submit" class="btn" value="Ajouter un elemenet">
+      <input type="submit" class="btn" [value]="btnText">
       </form>
   </div>
   <div class="col">
