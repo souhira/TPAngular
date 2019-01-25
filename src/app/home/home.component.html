@@ -12,7 +12,9 @@
     <div class="col">
       <p class="sm"> Un nouvel élément de liste </p>
       <form>
-      <input type="text" class="txt" name="item" placeholder="...">
+      <input type="text" class="txt" name="item" placeholder="..." [(ngModel)]="objectifText">
+      <br>
+      <span>{{objectifText}}</span>
       <input type="submit" class="btn" [value]="btnText">
       </form>
   </div>

@@ -9,6 +9,8 @@ export class HomeComponent implements OnInit {
 
   nbItems: number = 4;
   btnText: string  = "Ajouter un item";
+  objectifText : string = "mon premier objectif";
+  
   constructor() { }
   ngOnInit() {
   }
