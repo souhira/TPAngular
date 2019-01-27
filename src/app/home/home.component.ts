@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, transition, animate, keyframes, query, stagger} from '@angular/animations';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -26,8 +26,10 @@ export class HomeComponent implements OnInit {
   btnText: string  = "Ajouter un item";
   objectifText : string = "Mon nouvel objectif";
   objectifs = ["Un element", "deux elements", "trois elements"];
-
-  constructor() { }
+  myRouter: Router;
+  constructor(private aRouter: Router) {
+    this.myRouter = aRouter;
+   }
   ngOnInit() {
     this.nbItems = this.objectifs.length;
   }
