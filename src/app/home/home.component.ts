@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, transition, animate, keyframes, query, stagger} from '@angular/animations';
 import {Router} from '@angular/router';
+import { ActiviteService } from '../services/activite.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'], 
   animations: [
-    trigger('objectifs',[
+    trigger('this.activiteService.objectifs',[
       transition('* => *',[
        query(':enter', style({opacity: 0}), {optional: true}),
        query(':enter', stagger('300ms',[
@@ -25,17 +26,17 @@ export class HomeComponent implements OnInit {
   nbItems: number;
   btnText: string  = "Ajouter un item";
   objectifText : string = "Mon nouvel objectif";
-  objectifs = ["Un element", "deux elements", "trois elements"];
-  constructor(private myRouter: Router) {
+
+  constructor(private myRouter: Router, private activiteService: ActiviteService) {
    }
   ngOnInit() {
-    this.nbItems = this.objectifs.length;
+    this.nbItems = this.activiteService.objectifs.length;
   }
 
   ajoutItem()
   {
-    this.objectifs.push(this.objectifText);
-    this.nbItems = this.objectifs.length;
+    this.activiteService.objectifs.push(this.objectifText);
+    this.nbItems = this.activiteService.objectifs.length;
     this.objectifText = '';
     setTimeout(()=> {this.myRouter.navigate(['about']);}, 1000 );
 

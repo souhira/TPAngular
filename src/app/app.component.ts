@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActiviteService } from './services/activite.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ModuleAngularTP3';
+
+  constructor(private activiteService: ActiviteService){
+    
+  }
 }
