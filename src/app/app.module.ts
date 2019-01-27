@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ConsultActiviteComponent } from './consult-activite/consult-activite.component';
+import {ActiviteService} from './services/activite.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { ConsultActiviteComponent } from './consult-activite/consult-activite.co
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ActiviteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
