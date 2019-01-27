@@ -8,9 +8,11 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class ConsultActiviteComponent implements OnInit {
   recupParam: String;
+  recupParam2: String='';
   constructor(private actR: ActivatedRoute) {
     this.recupParam = actR.snapshot.params["param"];
-   }
+    this.recupParam2 = actR.snapshot.params["param2"];
+  }
 
   ngOnInit() {
   }

@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'consultAct/:param',
     component: ConsultActiviteComponent
+  },
+  {
+    path: 'consultAct/:param/:param2',
+    component: ConsultActiviteComponent
   }
 ];
 
