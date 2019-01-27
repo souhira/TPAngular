@@ -26,9 +26,7 @@ export class HomeComponent implements OnInit {
   btnText: string  = "Ajouter un item";
   objectifText : string = "Mon nouvel objectif";
   objectifs = ["Un element", "deux elements", "trois elements"];
-  myRouter: Router;
-  constructor(private aRouter: Router) {
-    this.myRouter = aRouter;
+  constructor(private myRouter: Router) {
    }
   ngOnInit() {
     this.nbItems = this.objectifs.length;
