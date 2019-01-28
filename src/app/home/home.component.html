@@ -20,7 +20,7 @@
   </div>
 
   <div class="col">
-    <p class="life-container" *ngFor="let o of this.activiteService.objectifs ">
+    <p class="life-container" *ngFor="let o of this.activiteService.objectifs; let i = index " (click)="this.myRouter.navigate(['consultAct/'+i]);">
       {{o}}
     </p>
   </div>

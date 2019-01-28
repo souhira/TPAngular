@@ -1,8 +1,4 @@
-<p>
-  consult-activite works!
-</p>
-<h3>Test récupération des paramètres:</h3>
+<h3>Detail de l'activité:</h3>
 <ol>
-<li>Paramètre 1 transmis:  <b>{{recupParam}}</b></li>
-<li *ngIf="recupParam2!=undefined">Paramètre 2 transmis:  <b>{{recupParam2}}</b></li>
+<li>Nom de l'activité:  <b>{{this.activiteService.objectifs[recupParam] }}</b></li>
 </ol>

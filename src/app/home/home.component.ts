@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
     this.activiteService.objectifs.push(this.objectifText);
     this.nbItems = this.activiteService.objectifs.length;
     this.objectifText = '';
-    setTimeout(()=> {this.myRouter.navigate(['about']);}, 1000 );
+   // setTimeout(()=> {this.myRouter.navigate(['about']);}, 1000 );
 
   }
 }
