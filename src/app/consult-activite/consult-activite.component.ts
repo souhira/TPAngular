@@ -10,11 +10,11 @@ import {Router} from '@angular/router';
   styleUrls: ['./consult-activite.component.scss']
 })
 export class ConsultActiviteComponent implements OnInit {
-  recupParam: String;
-  recupParam2: String='';
+  recupParam: number;
+  recupParam2: string='';
   isEditing: boolean= false;
-  inputField: String = "";
-  constructor(private actR: ActivatedRoute, private activiteService: ActiviteService, private myRouter: Router) {
+  inputField: string = "";
+  constructor(private actR: ActivatedRoute, public activiteService: ActiviteService, public myRouter: Router) {
     this.recupParam = actR.snapshot.params["param"];
     this.recupParam2 = actR.snapshot.params["param2"];
   }

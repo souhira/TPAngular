@@ -8,7 +8,7 @@ import { ActiviteService } from '../services/activite.service';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private activiteService: ActiviteService) { 
+  constructor(public activiteService: ActiviteService) { 
 
     
   }

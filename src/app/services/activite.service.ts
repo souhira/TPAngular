@@ -9,7 +9,7 @@ export class ActiviteService{
     this.objectifs.splice(index,1);
   }
 
-  editItem(index: number, newVal: String){
+  editItem(index: number, newVal: string){
     this.objectifs[index] = newVal;
   }
 }
