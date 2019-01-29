@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ModuleAngularTP3": {
+    "ModuleAngularBaseTP4": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ModuleAngularTP3",
+            "outputPath": "dist/ModuleAngularBaseTP4",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ModuleAngularTP3:build"
+            "browserTarget": "ModuleAngularBaseTP4:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ModuleAngularTP3:build:production"
+              "browserTarget": "ModuleAngularBaseTP4:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ModuleAngularTP3:build"
+            "browserTarget": "ModuleAngularBaseTP4:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "ModuleAngularTP3-e2e": {
+    "ModuleAngularBaseTP4-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ModuleAngularTP3:serve"
+            "devServerTarget": "ModuleAngularBaseTP4:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ModuleAngularTP3:serve:production"
+              "devServerTarget": "ModuleAngularBaseTP4:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "ModuleAngularTP3"
+  "defaultProject": "ModuleAngularBaseTP4"
 }
