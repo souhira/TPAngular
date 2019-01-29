@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ModuleAngularBaseTP4",
+            "outputPath": "dist/ModuleAngularBaseSeanceTP4",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,11 +62,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ModuleAngularBaseTP4:build"
+            "browserTarget": "ModuleAngularBaseSeanceTP4:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ModuleAngularBaseTP4:build:production"
+              "browserTarget": "ModuleAngularBaseSeanceTP4:build:production"
             }
           }
         },
@@ -107,7 +107,7 @@
         }
       }
     },
-    "ModuleAngularBaseTP4-e2e": {
+    "ModuleAngularBaseSeanceTP4-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ModuleAngularBaseTP4:serve"
+            "devServerTarget": "ModuleAngularBaseSeanceTP4:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ModuleAngularBaseTP4:serve:production"
+              "devServerTarget": "ModuleAngularBaseSeanceTP4:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "ModuleAngularBaseTP4"
+  "defaultProject": "ModuleAngularBaseSeanceTP4"
 }
